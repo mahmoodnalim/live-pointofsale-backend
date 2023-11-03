@@ -7,6 +7,7 @@ export default async function(req: Request, res: Response, next: NextFunction) {
     next();
   } catch (ex) {
     console.log(ex);
+     //@ts-ignore
     res.status(500).json({
       error: ex
     });

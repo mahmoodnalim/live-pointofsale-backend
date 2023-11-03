@@ -46,6 +46,7 @@ employeeRoute.get("/:id", validateJwt, async (req, res) => {
   }
 });
 
+
 employeeRoute.post(
   "/",
   validateJwt,
@@ -63,6 +64,7 @@ employeeRoute.post(
     }
   }
 );
+
 
 employeeRoute.put("/:id",
   validateJwt,
